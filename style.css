@@ -1,0 +1,177 @@
+.background,
+.combine,
+.icon,
+h1,
+p,
+.first-box,
+.second-box,
+.last-box,
+.second-button,
+.first-button,
+.last-button,
+body {
+  margin: 0;
+}
+
+
+.background {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.combine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-box {
+  background-color: rgba(253, 121, 27, 0.928);
+  max-width: 30%;
+  height: auto;
+  border-radius: 5px 0 0 5px;
+}
+
+.icon {
+  height: 12px;
+  padding: 15px 0 8px 15px;
+}
+
+h1 {
+  font-size: 13px;
+  font-family: Arial Narrow;
+  padding-left: 15px;
+  color: rgb(234, 225, 225);
+}
+
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  font-size: 8px;
+  font-family: Arial Narrow;
+  line-height: 12px;
+  max-width: 98px;
+  color: rgb(234, 225, 225);
+
+}
+
+.first-button {
+  margin: 25px 0 15px 15px;
+  font-size: 6px;
+  font-family: Arial Narrow;
+  padding: 4px 10px;
+  border-radius: 30px;
+  border: none;
+  color: rgba(253, 121, 27, 0.928);
+}
+
+.first-button:hover {
+  cursor: pointer;
+}
+.first-button:active {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: rgba(253, 121, 27, 0.928);
+  color: white;
+}
+
+.second-box {
+  background-color: rgb(18, 98, 101);
+  max-width: 30%;
+  height: auto;
+  margin-left: -2px;
+}
+
+.second-button {
+  margin: 25px 0 15px 15px;
+  font-size: 6px;
+  font-family: Arial Narrow;
+  padding: 4px 10px;
+  border-radius: 30px;
+  border: none;
+  color: rgb(18, 98, 101);
+}
+
+.second-button:hover {
+  cursor: pointer;
+}
+.second-button:active {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: rgb(18, 98, 101);
+  color: white;
+}
+
+.last-box {
+  background-color: rgb(4, 44, 46);
+  max-width: 30%;
+  height: auto;
+  border-radius: 0 5px 5px 0;
+  margin-left: -2px;
+}
+
+.last-button {
+  margin: 25px 0 15px 15px;
+  font-size: 6px;
+  font-family: Arial Narrow;
+  padding: 4px 10px;
+  border-radius: 30px;
+  border: none;
+  color: rgb(4, 44, 46);
+}
+
+.last-button:hover {
+  color: rgb(4, 44, 46);
+  cursor: pointer;
+}
+.last-button:active {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: rgb(4, 44, 46);
+  color: white;
+}
+
+@media (orientation: portrait) {
+  .background {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .combine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+  }
+  
+  .first-box {
+    background-color: rgba(253, 121, 27, 0.928);
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: -2px;
+  }
+
+  .second-box {
+    background-color: rgb(18, 98, 101);
+    width: 400px;
+    height: auto;
+  }
+
+  .last-box {
+    background-color: rgb(4, 44, 46);
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: -2px;
+  }
+}
